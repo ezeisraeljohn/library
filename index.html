@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div hidden class="form-div">
+        <form class="form">
+          <label for="title">Title</label>
+          <input class="title-input" type="text" id="title" name="title" />
+
+          <label for="author">Author</label>
+          <input class="author-input" type="text" id="author" name="author" />
+
+          <label for="pages">Pages</label>
+          <input class="pages-input" type="text" id="input" name="pages" />
+          <button class="submit" type="submit">Save</button>
+        </form>
+      </div>
+      <div class="book book-beginning">
+        <h2 class="title">Stephen Hawkings</h2>
+        <div class="auth-pages">
+          <h3 class="author">Hawkings</h3>
+          <p class="pages"><em>222 Pages</em></p>
+        </div>
+
+        <div class="isRead">
+          <input type="radio" id="read" />
+          <p class="toggle">Not Read</p>
+          <button class="remove remove-beginning">Remove Book</button>
+        </div>
+      </div>
+      <button class="new-book">New Book</button>
+    </div>
+  </body>
+</html>
